@@ -1,2 +1,0 @@
-# persona
-profil persona
