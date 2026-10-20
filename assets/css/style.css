@@ -1,0 +1,38 @@
+/* Warna utama (biru tua dari peci di foto) */
+:root {
+    --brand: #2b3f9e;
+    --brand-ink: #ffffff;
+    --bs-link-color: var(--brand);
+    --bs-link-hover-color: #1f2f78;
+}
+[data-bs-theme="dark"] {
+    --brand: #8fa2ff;
+    --brand-ink: #0f1220;
+    --bs-link-color: #8fa2ff;
+    --bs-link-hover-color: #b4c0ff;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+
+/* Tombol */
+.btn-brand { background: var(--brand); border: 1.5px solid var(--brand); color: var(--brand-ink); font-weight: 600; }
+.btn-brand:hover, .btn-brand:focus-visible { background: transparent; color: var(--brand); }
+.btn-outline-brand { border: 1.5px solid var(--brand); color: var(--brand); font-weight: 600; }
+.btn-outline-brand:hover, .btn-outline-brand:focus-visible { background: var(--brand); color: var(--brand-ink); }
+
+/* Menu aktif (scrollspy) */
+.navbar .nav-link.active { color: var(--brand); font-weight: 600; }
+
+/* Foto persegi */
+.foto-profil { width: 100%; max-width: 360px; aspect-ratio: 1 / 1; object-fit: cover; border: 3px solid #fff; }
+
+/* Data diri */
+.data-diri dt { font-weight: 600; }
+.data-diri dd { color: var(--bs-secondary-color); }
+
+/* Pembantu tata letak */
+.batas-baca { max-width: 36em; }
+.kolom-label { min-width: 140px; }
